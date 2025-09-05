@@ -4,6 +4,10 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  background-color: darkslategrey;
+  background-image: url(/Users/hannaholbrich/movies-project/movies-api-project/src/assets/background.webp);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  background-attachment: fixed;
   color: white;
 }
