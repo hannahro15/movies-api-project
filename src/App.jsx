@@ -8,7 +8,7 @@ function App() {
 
   async function fetchMovies() {
     try {
-      const response = await fetch(`https://www.omdbapi.com/?s=popular&apikey=${import.meta.env.VITE_OMDB_API_KEY}`);
+      const response = await fetch(`https://www.omdbapi.com/?s=movie&type=movie&apikey=${import.meta.env.VITE_OMDB_API_KEY}`);
       const result = await response.json();
       console.log(result);
       if (result.Search) {
@@ -27,9 +27,9 @@ function App() {
     <>
       <h1>Movies App</h1>
       <SearchBar />
-      <div className="movie-card-container">
+      <div className="movie-card-container d-flex flex-wrap justify-content-center">
         {movies.map((movie) => (
-          <MovieCard key={movie.id} movie={movie} />
+          <MovieCard key={movie.imdbID} movie={movie} />
         ))}
       </div>
     </>
