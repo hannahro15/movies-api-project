@@ -6,7 +6,7 @@
   text-align: center;
   background-image: url(/Users/hannaholbrich/movies-project/movies-api-project/src/assets/background.webp);
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   background-position: center;
   background-attachment: fixed;
   color: white;
