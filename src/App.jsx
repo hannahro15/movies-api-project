@@ -1,8 +1,6 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import SearchBar from './components/MovieSearch'
+import MovieCard from './components/MovieCard'
 
 function App() {
 
@@ -10,6 +8,9 @@ function App() {
     <>
       <h1>Movies App</h1>
       <SearchBar />
+      <div className="movie-card-container">
+        <MovieCard />
+      </div>
     </>
   )
 }
